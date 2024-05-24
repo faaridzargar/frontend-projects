@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(148, 38%, 91%);
+    height: 100vh;
+}
+
+.frame{
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    border-radius:20px ;
+    padding: 25px;
+    font-family: "Karla",sans-serif;
+}
+h1{
+    margin: 0;
+}
+.form{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    margin:20px 20px 0px 0px;
+    font-size: 16px;
+    gap: 10px;
+}
+input[type=text]{
+    border-radius: 10px;
+    width: 320px;
+    height: 40px;
+    border: 1px solid hsl(186, 15%, 59%);
+    
+}
+input[type=email]{
+    border-radius: 10px;
+    width:669px;
+    height: 40px;
+    border: 1px solid hsl(186, 15%, 59%);
+}
+    
