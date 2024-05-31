@@ -14,51 +14,58 @@
   <div class="container">
     <div class="frame">
         <h1>Contact us</h1>
-        <form action="">
+        <form name="myForm" action="POST">
           <div class="form">
             <label for="fName">First Name *</label>
             <input type="text" name="fName">
+            <span>Text Required *</span>
           </div>
           <div class="form">
             <label for="LName">Last Name *</label>
             <input type="text" name="LName">
+            <span>Text Required *</span>
           </div>
           <div class="form">
             <label for="Email">Email Address *</label>
             <input type="email" name="Email">
+            <span>Text Required *</span>
           </div>
 
           <div class="form">
             <label for="Query">Query Type *</label>
-            <input type="text" name="Query">
           </div>
-          <div class="form">
-            <label for="Query-2">&nbsp;</label>
-            <input type="text" name="Query-2">
-          </div>
-          
-          <div class="form">
-            <label for="Message">Message *</label>
-            <input type="text" name="Message">
+
+          <div class="form-1">
+            <input type="radio" id="enq" name="Query" value="Enq">
+            <label for="enq">General Enquiry</label>
+            </div>
+          <div class="form-1">
+            <input type="radio" id="req" name="Query" value="Req">
+            <label for="req">Support Request</label>
           </div>
 
           <div class="form">
-            <input type="checkbox" name="Consent" value="">
+            <label for="Message">Message *</label>
+            <textarea type="text" name="Message"></textarea>
+            <span>Text Required *</span>
+          </div>
+
+          <div class="form">
+            <input type="checkbox" name="Consent">
           </div>
           <div class="form">
             <label for="Consent">I consent to be contacted by the team.</label>
           </div>
+          <div class="form">
+            <span>To submit this form,please give your consent</span>
+          </div>
 
           <div class="form">
-            <input type="submit" name="Submit" value="Submit">
+            <input type="button" name="Submit" value="Submit">
           </div>
 
-            
           </div>
-
         </form>
-        
-
       </div>
     </div>
   </div>
@@ -108,5 +115,6 @@
 
   Message Sent!
   Thanks for completing the form. We'll be in touch soon! -->
+<script src="./index.js"></script>
 </body>
 </html>

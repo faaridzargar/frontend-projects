@@ -7,12 +7,11 @@ body{
     justify-content: center;
     align-items: center;
     background-color: hsl(148, 38%, 91%);
-    height: 100vh;
+    height: 800px;
 }
 
 .frame{
     width: 700px;
-    height: 600px;
     background-color: white;
     border-radius:20px ;
     padding: 25px 0px 25px 27px;
@@ -21,6 +20,24 @@ body{
 h1{
     margin: 0;
 }
+.form-1{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 10px;
+    margin:20px 20px 25px 0px;
+    font-size: 16px;
+    gap: 10px;
+    height: inherit;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 10px;
+    padding:10px 25px;
+}
+.form-1:hover{
+    outline: 1px solid hsl(147, 29%, 57%);
+}
+/* .form-1{
+    background-color: hsl(147, 29%, 57%);
+} */
 .form{
     display: inline-flex;
     flex-direction: column;
@@ -28,6 +45,7 @@ h1{
     margin:20px 20px 0px 0px;
     font-size: 16px;
     gap: 10px;
+    height: inherit;
 }
 input[type=text]{
     border-radius: 10px;
@@ -48,6 +66,7 @@ input[name=Message]{
     width:669px;
     height: 100px;
     border: 1px solid hsl(186, 15%, 59%);
+    resize: none;
 }
 
 input[type=checkbox]{
@@ -64,7 +83,20 @@ label[for=Consent]{
     color: hsl(187, 24%, 22%);
     width: 561px;
 }
-input[type=submit]{
+
+label[for=Query]{
+    color: hsl(187, 24%, 22%);
+    width: 561px;
+}
+
+#query{
+    width: 100%;
+}
+input[type=radio]{
+    align-self: flex-start;
+}
+
+input[type=button]{
     border-radius: 10px;
     padding:  18px 19.6rem;
     background-color: hsl(169, 82%, 27%);
@@ -72,4 +104,40 @@ input[type=submit]{
     color: white;
     border: none;
     font-weight: 700;
+}
+textarea{
+    border-radius: 10px;
+    width:669px;
+    height: 100px;
+    border: 1px solid hsl(186, 15%, 59%);
+    resize: none;
+    font-family: "Karla",sans-serif;
+    font-size: inherit;
+    
+}
+
+textarea:focus{
+    outline: none;
+}
+
+span{
+    color: hsl(0, 82%, 48%);
+    font-family: "Arak",sans-serif;
+    display: none;
+}
+input:focus{
+    outline: none;
+}
+
+textarea:hover,input[type=text]:hover,input[type=email]:hover{
+    outline: 1px solid hsl(147, 29%, 57%);
+}
+input[type=button]:hover{
+    background-color: hsl(169, 87%, 18%);
+}
+input{
+    accent-color: hsl(169, 87%, 18%);
+    font-size: inherit;
+    font-family: "Arak",sans-serif;
+    color: hsl(187, 24%, 22%);
 }
