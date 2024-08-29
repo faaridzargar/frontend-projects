@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI("AIzaSyDhzwmUI2doM0agRkEffZHLT03BUe9e5hk");
+const genAI = new GoogleGenerativeAI("");
 
 async function run(prompt) {
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
